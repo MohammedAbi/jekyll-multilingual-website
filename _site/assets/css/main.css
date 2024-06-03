@@ -1,0 +1,72 @@
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: relative; /* Ensure the navigation bar is positioned correctly */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff; /* Ensure the link text is white */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: block; /* Ensure the link is displayed as a block element */
+}
+
+nav ul li a:hover {
+  background-color: #575757; /* Darken the background on hover */
+}
+
+/* Style the language switcher */
+nav ul:nth-of-type(2) {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  padding: 0;
+}
+
+/* Style the content */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #666;
+}

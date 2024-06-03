@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.default_lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/{{ page.lang | default: site.default_lang }}/"
+            >{{ t "nav.home" }}</a
+          >
+        </li>
+        <li>
+          <a href="/{{ page.lang | default: site.default_lang }}/about/"
+            >{{ t "nav.about" }}</a
+          >
+        </li>
+        <li>
+          <a href="/{{ page.lang | default: site.default_lang }}/contact/"
+            >{{ t "nav.contact" }}</a
+          >
+        </li>
+      </ul>
+      <ul>
+        {% for lang in site.languages %}
+        <li>
+          <a href="{{ site.baseurl }}/{{ lang }}/">{{ lang | upcase }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="container">{{ content }}</div>
+  </body>
+</html>
